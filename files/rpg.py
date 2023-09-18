@@ -21,19 +21,18 @@ print(r" | |  | | |__| | | \ \| |__| | |  | |/ ____ \ |__| |")
 print(r" |_|  |_|\____/|_|  \_\_____/|_|  |_/_/    \_\____/ ")
 print(r"                                                    ")
 
+# get user name and greet user
 name = input("What is your name? >> ")
 print(f"\nOkay {name}, type \"help\" for a list of commands!")
 
-# debug one second
-one = 0.1
+# one second (changable for debugging)
+one = 0.8
 
 # get all the bad guys from the JSON ( or csv )
 enemiesFilename = "enemies.csv"
 with open(enemiesFilename, encoding="utf-8") as f:
     reader = csv.reader(f)
     enemies = list(reader)
-    #data = json.load(f)
-    #print(data)
 
 # basic character class
 class character:
@@ -89,7 +88,8 @@ class Player(character):
         self.act(4)
     def report(self):
         self.act(5)
-    
+
+    # all fight actions feed into this function
     def act(self, number):
         self.hp = fightResult(number, self)
         if self.hp > 0:
@@ -97,7 +97,7 @@ class Player(character):
             self.fighting = False
             self.kills += 1
 
-# big list of options and stuff
+# big list of options
 options = {"HELP": Player.help,
            "STATUS": Player.status,
            "QUIT": Player.quit,
@@ -107,6 +107,7 @@ optionsList = ("HELP",
            "QUIT",
            "MOVE FORWARD")
 
+# big list of actions
 actions = {"SURRENDER": Player.surrender,
            "BOMB": Player.bomb,
            "ARROW": Player.arrow,
@@ -156,7 +157,7 @@ def encounter(p1, p2):
     sleep(one)
     print("\n" + p1.bio[0], "fights", p2.bio[0] + ".")
 
-# loop runs all the time
+# loop runs until game ends
 while(p.hp > 0):
     action = input("\n>> ").upper()
     args = action.split()
@@ -178,7 +179,7 @@ while(p.hp > 0):
                 print("\nNothing happened.")
         sleep(one)
 
-# end of the game
+# end of game (if player died)
 if p.hp <= 0:
     sleep(one)
     print("\nYou Died! You got", p.kills, "kills.")
