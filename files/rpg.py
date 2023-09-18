@@ -3,11 +3,9 @@
 # based on the game Mordhau, developed by Triternion
 
 # ISSUES:
-# kills amount doesn't update in "status" message.
 # code is disgusting
 # I don't know how this programme works
 # need more comments
-# unable to report maul man
 
 # import nonsense
 import random
