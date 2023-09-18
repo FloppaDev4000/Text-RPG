@@ -1,0 +1,64 @@
+{
+	"enemies": [
+		{
+			"id": 1,
+			"name": "archer",
+			"intro": "The huntsman sits perched atop a tower.",
+			"surrender": "He shows no mercy; his arrow lodges itself in your head, killing you instantly.",
+			"bomb": "",
+			"arrow": "",
+			"sword": "",
+			"hammer": ""
+		},
+		{
+			"id": 2,
+			"name": "footman",
+			"intro": "The soldier clutches a spear tightly in their hand.",
+			"surrender": "They do not accept your surrender. They thrust their spear through your heart, killing you instantly.",
+			"bomb": "",
+			"arrow": "",
+			"sword": "",
+			"hammer": ""
+		},
+		{
+			"id": 3,
+			"name": "veteran",
+			"intro": "The armoured knight towers over you.",
+			"surrender": "The knight scoffs; he has no time for mercy. Mace in hand, he crushes your skull, killing you instantly.",
+			"bomb": "",
+			"arrow": "",
+			"sword": "",
+			"hammer": ""
+		},
+		{
+			"id": 4,
+			"name": "scoundrel",
+			"intro": "The lowly jester taunts you.",
+			"surrender": "They accept your surrender, and urge you to flee. While your back is turned, though, they launch a bomb in your direction. Your death is instant.",
+			"bomb": "",
+			"arrow": "",
+			"sword": "",
+			"hammer": ""
+		},
+		{
+			"id": 5,
+			"name": "engineer",
+			"intro": "The methodical builder fortifies his defenses.",
+			"surrender": "He accepts your surrender and lowers his weapon. A loose brick from one of his contraptions slips and falls on your head. You die instantly.",
+			"bomb": "",
+			"arrow": "",
+			"sword": "",
+			"hammer": ""
+		},
+		{
+			"id": 6,
+			"name": "naked maul man",
+			"intro": "At a measly 4ft tall, the short-stacked hammer wielder doesn't seem much of a threat.",
+			"surrender": "Big mistake. He knows not the concept of mercy, and kills you with his hammer quite brutally. And instantly.",
+			"bomb": "",
+			"arrow": "",
+			"sword": "",
+			"hammer": ""
+		},
+	]
+}
