@@ -29,7 +29,7 @@ print(f"\nOkay {name}, type \"help\" for a list of commands!")
 one = 0.8
 
 # get all the bad guys from the JSON ( or csv )
-enemiesFilename = "enemies.csv"
+enemiesFilename = "files/enemies.csv"
 with open(enemiesFilename, encoding="utf-8") as f:
     reader = csv.reader(f)
     enemies = list(reader)
