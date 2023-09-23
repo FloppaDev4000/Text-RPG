@@ -1,3 +1,5 @@
+I write all the lines here then put them in the CSV file. This file isn't used or anything, I just like to have it with the rest of them :)
+
 BOMB
 +Your bomb ignites the archer's tower. He is crushed under the collapsing wood and rubble.
 +Having little protection against the burning oil, they fall to the ground in a heap of flames. Ouch.
