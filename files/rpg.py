@@ -1,11 +1,10 @@
-# text based game
-# Author: Adam Noonan
+# AUTHOR: Adam N
+# PROGRAM: Simple text-based RPG game
+
 # based on the game Mordhau, developed by Triternion
 
 # ISSUES:
-# code is disgusting
-# I don't know how this programme works
-# need more comments
+    # none! my code is perfect and nobody dares disagree with me
 
 # import nonsense
 import random
